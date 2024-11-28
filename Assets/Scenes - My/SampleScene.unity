@@ -20802,6 +20802,12 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 857357130}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &864598691 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4074180291764849440, guid: da387ef9566fb3e4884431f6512b9795,
+    type: 3}
+  m_PrefabInstance: {fileID: 742067189}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &865178441
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -45065,6 +45071,11 @@ PrefabInstance:
       propertyPath: gun
       value: 
       objectReference: {fileID: 1717713592}
+    - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
+        type: 3}
+      propertyPath: airColumn
+      value: 
+      objectReference: {fileID: 864598691}
     - target: {fileID: 8616685848737228371, guid: c5efc39a8aaf6e64ea40e9ad573e9b47,
         type: 3}
       propertyPath: objToShoot
