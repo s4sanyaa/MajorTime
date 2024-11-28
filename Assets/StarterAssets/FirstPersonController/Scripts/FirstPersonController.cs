@@ -82,6 +82,8 @@ namespace StarterAssets
 		private bool canShoot;
 
 		[SerializeField] private GameObject objToShoot;
+		[SerializeField] private Transform gun;
+		[SerializeField] private GameObject airColumn;
 		private bool IsCurrentDeviceMouse
 		{
 			get
@@ -146,8 +148,13 @@ namespace StarterAssets
 		
 		private void Vacuum()
 		{
-			if (!_input.vacuum) return;
-			Collider[] targetsInRadius = Physics.OverlapSphere(transform.position, 2, LayerMask.GetMask("Pickable"));
+			if (!_input.vacuum)
+			{
+				airColumn.SetActive(false);
+				return;
+			}
+			airColumn.SetActive(true);
+			Collider[] targetsInRadius = Physics.OverlapSphere(transform.position, 5, LayerMask.GetMask("Pickable"));
 			foreach (Collider target in targetsInRadius)
 			{
 				Transform targetTransform = target.transform;
@@ -156,7 +163,11 @@ namespace StarterAssets
 				{
 					float distToTarget = Vector3.Distance(transform.position, targetTransform.position);
 					if (!Physics.Raycast(transform.position, dirToTarget, distToTarget, LayerMask.GetMask("Ground")))
-						GetComponent<Inventory>().AddItem(target.gameObject);
+					{
+						target.gameObject.GetComponent<Pull>().pull(gun.localToWorldMatrix.GetPosition() - targetTransform.position);
+						if (distToTarget < 2)
+							GetComponent<Inventory>().AddItem(target.gameObject);
+					}
 				}
 			}
 		}
