@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Sky 1
+  m_Name: ThirdWorld
   m_Shader: {fileID: 4800000, guid: 3c1455edc49af4cc49c1cae67fb2dba3, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -79,8 +79,8 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - _Color: {r: 0.6367924, g: 0.8322844, b: 1, a: 1}
-    - _ColorA: {r: 0.91194963, g: 0.62804073, b: 0.6652352, a: 1}
-    - _ColorB: {r: 0.9559748, g: 0.36976376, b: 0.69077003, a: 1}
-    - _ColorC: {r: 0, g: 0, b: 0, a: 1}
+    - _ColorA: {r: 0.69182384, g: 0.4342775, b: 0.3111031, a: 1}
+    - _ColorB: {r: 0.9607843, g: 0.765625, b: 0.7205882, a: 1}
+    - _ColorC: {r: 1, g: 0.39999998, b: 0.43203515, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
   m_BuildTextureStacks: []
