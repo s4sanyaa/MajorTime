@@ -37,11 +37,11 @@ public class EquipmentManager : MonoBehaviour {
 	public delegate void OnEquipmentChanged(Equipment newItem, Equipment oldItem);
 	public event OnEquipmentChanged onEquipmentChanged;
 
-	Inventory inventory;
+	Inven inventory;
 
 	void Start ()
 	{
-		inventory = Inventory.instance;
+		inventory = Inven.instance;
 
 		int numSlots = System.Enum.GetNames (typeof(EquipmentSlot)).Length;
 		currentEquipment = new Equipment[numSlots];

@@ -9,11 +9,11 @@ public class InventoryUI : MonoBehaviour {
 	public GameObject inventoryUI;	// The entire UI
 	public Transform itemsParent;	// The parent object of all the items
 
-	Inventory inventory;	// Our current inventory
+	Inven inventory;	// Our current inventory
 
 	void Start ()
 	{
-		inventory = Inventory.instance;
+		inventory = Inven.instance;
 		inventory.onItemChangedCallback += UpdateUI;
 	}
 

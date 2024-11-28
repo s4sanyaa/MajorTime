@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Inventory : MonoBehaviour {
+public class Inven : MonoBehaviour {
 
 	#region Singleton
 
-	public static Inventory instance;
+	public static Inven instance;
 
 	void Awake ()
 	{

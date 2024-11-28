@@ -29,7 +29,7 @@ public class TreasureChest : Interactable {
 		yield return new WaitForSeconds (1f);
 		print ("Chest opened");
 		foreach (Item i in items) {
-			Inventory.instance.Add (i);
+			Inven.instance.Add (i);
 		}
 	}
 }
