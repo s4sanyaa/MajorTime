@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 6020911781325161573}
   - component: {fileID: 9181468515154050731}
   - component: {fileID: 3820129780294665186}
+  - component: {fileID: 7100900813753525271}
   m_Layer: 7
   m_Name: Orange
   m_TagString: Food
@@ -30,7 +31,7 @@ Transform:
   m_GameObject: {fileID: 1193998491400526148}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 28.4, y: 0.58, z: -58.2}
+  m_LocalPosition: {x: 28.4, y: 0.6, z: -58.2}
   m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -149,3 +150,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: Fruit
   name: Orange
+--- !u!114 &7100900813753525271
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193998491400526148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a7a9ce5f25448d4da52da2820d04e91, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pullSpeed: 6
+  upDraft: 1.5
