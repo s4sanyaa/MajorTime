@@ -332,7 +332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefType: Fruit
   favFood: Apple
-  resource: {fileID: 5482513602628254812, guid: 7b3ad6441df46c24c86738a1883cbc17,
+  resource: {fileID: 6161649899266985146, guid: a4eb286d139525f4a865d33571b4ca63,
     type: 3}
 --- !u!114 &-5391142438865366508
 MonoBehaviour:

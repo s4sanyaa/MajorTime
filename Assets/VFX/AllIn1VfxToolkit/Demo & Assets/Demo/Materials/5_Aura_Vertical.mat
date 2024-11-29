@@ -2,21 +2,34 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!21 &2100000
 Material:
-  serializedVersion: 6
+  serializedVersion: 8
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: 5_Aura_Vertical
   m_Shader: {fileID: 4800000, guid: 6eb86e4931b506a408fd1477edec61ea, type: 3}
-  m_ShaderKeywords: ADDITIVECONFIG_ON COLORRAMPGRAD_ON COLORRAMP_ON GLOW_ON PREMULTIPLYCOLOR_ON
-    SHAPE1CONTRAST_ON SHAPE2CONTRAST_ON SHAPE2DISTORT_ON SHAPE2_ON SHAPE3_ON
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords:
+  - ADDITIVECONFIG_ON
+  - COLORRAMPGRAD_ON
+  - COLORRAMP_ON
+  - GLOW_ON
+  - PREMULTIPLYCOLOR_ON
+  - SHAPE1CONTRAST_ON
+  - SHAPE2CONTRAST_ON
+  - SHAPE2DISTORT_ON
+  - SHAPE2_ON
+  - SHAPE3_ON
+  m_InvalidKeywords: []
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
   m_CustomRenderQueue: -1
   stringTagMap: {}
   disabledShaderPasses: []
+  m_LockedProperties: 
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
@@ -88,6 +101,7 @@ Material:
         m_Texture: {fileID: 2800000, guid: 48da24d771916524899d36e4bfe7f762, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    m_Ints: []
     m_Floats:
     - _Alpha: 1
     - _AlphaBrightness: 0
@@ -235,33 +249,40 @@ Material:
     - _DepthGlowColor: {r: 1, g: 1, b: 1, a: 1}
     - _FadeBurnColor: {r: 1, g: 1, b: 0, a: 1}
     - _FrontFaceTint: {r: 1, g: 1, b: 1, a: 1}
-    - _GlowColor: {r: 0.7254941, g: 0, b: 0.7264151, a: 1}
+    - _GlowColor: {r: 0.7254902, g: 0, b: 0.07637229, a: 1}
     - _LightColor: {r: 1, g: 1, b: 1, a: 1}
     - _RimColor: {r: 1, g: 1, b: 1, a: 1}
     - _Shape2Color: {r: 1, g: 1, b: 1, a: 1}
     - _Shape3Color: {r: 1, g: 1, b: 1, a: 1}
     - _ShapeColor: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
 --- !u!28 &4146536640344275900
 Texture2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: z_ColorRampTexGradientTex{"mode":0,"colorKeys":[{"color":{"r":0.13598684966564179,"g":0.043387334793806079,"b":0.23584908246994019,"a":1.0},"time":0.0},{"color":{"r":0.3035367727279663,"g":0.10196078568696976,"b":0.5176470875740051,"a":1.0},"time":0.45433738827705386},{"color":{"r":0.8301886916160584,"g":0.31719475984573367,"b":0.7235137224197388,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":1.0,"time":1.0}]}
+  m_Name: z_ColorRampTexGradientTex{"mode":0,"colorKeys":[{"color":{"r":0.23529411852359773,"g":0.2062050700187683,"b":0.04313725605607033,"a":1.0},"time":0.0},{"color":{"r":0.3035367727279663,"g":0.10196078568696976,"b":0.5176470875740051,"a":1.0},"time":0.45433738827705386},{"color":{"r":0.8301886916160584,"g":0.31719475984573367,"b":0.7235137224197388,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":1.0,"time":1.0}]}
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
   m_ForcedFallbackFormat: 4
   m_DownscaleFallback: 0
+  m_IsAlphaChannelOptional: 0
   serializedVersion: 2
   m_Width: 64
   m_Height: 1
   m_CompleteImageSize: 256
+  m_MipsStripped: 0
   m_TextureFormat: 4
   m_MipCount: 1
   m_IsReadable: 1
+  m_IsPreProcessed: 0
+  m_IgnoreMipmapLimit: 0
+  m_MipmapLimitGroupName: 
   m_StreamingMipmaps: 0
   m_StreamingMipmapsPriority: 0
+  m_VTOnly: 0
   m_AlphaIsTransparency: 0
   m_ImageCount: 1
   m_TextureDimension: 2
@@ -275,9 +296,11 @@ Texture2D:
     m_WrapW: 1
   m_LightmapFormat: 0
   m_ColorSpace: 0
+  m_PlatformBlob: 
   image data: 256
-  _typelessdata: 230b3cff240c3fff260c41ff270d44ff290d46ff2a0e49ff2c0e4bff2d0f4eff2f0f50ff301053ff321055ff331158ff35115aff36125dff38125fff391362ff3b1364ff3c1467ff3e1469ff3f156cff41166eff421671ff441773ff451776ff471878ff48187bff49197dff4b1980ff4c1a82ff4f1b85ff531c86ff571e88ff5b1f89ff5f218bff62238cff66248eff6a268fff6e2791ff722992ff762b94ff7a2c95ff7e2e97ff822f98ff86319aff89339bff8d349dff91369fff9537a0ff9939a2ff9d3ba3ffa13ca5ffa53ea6ffa93fa8ffad41a9ffb143abffb444acffb846aeffbc47afffc049b1ffc44ab2ffc84cb4ffcc4eb5ffd04fb7ffd451b8ff
+  _typelessdata: 3c350bff3d340fff3d3313ff3e3218ff3e311cff3f3020ff402f24ff402e29ff412d2dff412c31ff422b35ff432a3aff43293eff442942ff452846ff45274aff46264fff462553ff472457ff48235bff482260ff492164ff492068ff4a1f6cff4b1e70ff4b1d75ff4c1c79ff4c1c7dff4d1b81ff4f1b85ff531c86ff571e88ff5b1f89ff5f218bff62238cff66248eff6a268fff6e2791ff722992ff762b94ff7a2c95ff7e2e97ff822f98ff86319aff89339bff8d349dff91369fff9537a0ff9939a2ff9d3ba3ffa13ca5ffa53ea6ffa93fa8ffad41a9ffb143abffb444acffb846aeffbc47afffc049b1ffc44ab2ffc84cb4ffcc4eb5ffd04fb7ffd451b8ff
   m_StreamData:
+    serializedVersion: 2
     offset: 0
     size: 0
     path: 
