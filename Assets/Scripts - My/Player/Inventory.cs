@@ -1,11 +1,7 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
-
 public class Inventory : MonoBehaviour
 {
     public GameObject item;
-
     public void AddItem(GameObject obj)
     {
         if (!item)
@@ -14,7 +10,6 @@ public class Inventory : MonoBehaviour
             obj.SetActive(false);
         }
     }
-
     public bool RemoveItem()
     {
         if (!item)

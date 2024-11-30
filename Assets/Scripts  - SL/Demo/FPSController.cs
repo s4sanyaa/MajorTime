@@ -34,6 +34,9 @@ public class FPSController : PortalTraveller {
     float lastGroundedTime;
     bool disabled;
 
+    [SerializeField] private Transform gun;
+    [SerializeField] private GameObject airColumn;
+    private bool canShoot;
     void Start () {
         cam = Camera.main;
         if (lockCursor) {
@@ -47,6 +50,8 @@ public class FPSController : PortalTraveller {
         pitch = cam.transform.localEulerAngles.x;
         smoothYaw = yaw;
         smoothPitch = pitch;
+
+        canShoot = true;
     }
 
     void Update () {
@@ -60,11 +65,56 @@ public class FPSController : PortalTraveller {
             Cursor.visible = true;
             disabled = !disabled;
         }
+        if (disabled) return;
 
-        if (disabled) {
+        MoveAndCam();
+        Shoot();
+        Vacuum();
+    }
+    private void Vacuum()
+    {
+        if (!Input.GetMouseButton(0))
+        {
+            airColumn.SetActive(false);
             return;
         }
-
+        airColumn.SetActive(true);
+        Collider[] targetsInRadius = Physics.OverlapSphere(transform.position, 5, LayerMask.GetMask("Pickable"));
+        foreach (Collider target in targetsInRadius)
+        {
+            Transform targetTransform = target.transform;
+            Vector3 dirToTarget = (targetTransform.position - transform.position).normalized;
+            if (Vector3.Angle(transform.forward, dirToTarget) < 45)
+            {
+                float distToTarget = Vector3.Distance(transform.position, targetTransform.position);
+                if (!Physics.Raycast(transform.position, dirToTarget, distToTarget, LayerMask.GetMask("Ground")))
+                {
+                    target.gameObject.GetComponent<Pull>().pull(gun.localToWorldMatrix.GetPosition() - targetTransform.position);
+                    if (distToTarget < 2)
+                        GetComponent<Inventory>().AddItem(target.gameObject);
+                }
+            }
+        }
+    }
+    private void Shoot()
+    {
+        if (Input.GetMouseButton(1) && canShoot && GetComponent<Inventory>().RemoveItem())
+        {
+            GameObject obj = Instantiate(GetComponent<Inventory>().item, transform.position + transform.forward, Quaternion.identity);
+            obj.SetActive(true);
+            obj.GetComponent<Rigidbody>().AddForce(20 * transform.forward,ForceMode.Impulse);
+            canShoot = false;
+            Destroy(GetComponent<Inventory>().item);
+            StartCoroutine(ResetShooting());
+        }
+    }
+    IEnumerator ResetShooting()
+    {
+        yield return new WaitForSeconds(0.5f);
+        canShoot = true;
+    }
+    private void MoveAndCam()
+    {
         Vector2 input = new Vector2 (Input.GetAxisRaw ("Horizontal"), Input.GetAxisRaw ("Vertical"));
 
         Vector3 inputDir = new Vector3 (input.x, 0, input.y).normalized;
@@ -110,9 +160,7 @@ public class FPSController : PortalTraveller {
 
         transform.eulerAngles = Vector3.up * smoothYaw;
         cam.transform.localEulerAngles = Vector3.right * smoothPitch;
-
     }
-
     public override void Teleport (Transform fromPortal, Transform toPortal, Vector3 pos, Quaternion rot) {
         transform.position = pos;
         Vector3 eulerRot = rot.eulerAngles;
