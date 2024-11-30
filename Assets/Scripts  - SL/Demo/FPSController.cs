@@ -102,8 +102,10 @@ public class FPSController : PortalTraveller {
         {
             GameObject obj = Instantiate(GetComponent<Inventory>().item, transform.position + transform.forward, Quaternion.identity);
             obj.SetActive(true);
+            
             obj.GetComponent<Rigidbody>().AddForce(20 * transform.forward,ForceMode.Impulse);
             canShoot = false;
+            
             Destroy(GetComponent<Inventory>().item);
             StartCoroutine(ResetShooting());
         }
