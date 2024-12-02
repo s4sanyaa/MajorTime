@@ -61,7 +61,7 @@ public class SlimeAI : MonoBehaviour
                 //agent.updateRotation = true;
                 if (agent.remainingDistance <= agent.stoppingDistance)
                 {
-                    if (Random.Range(0.0f, 100.0f) < 0.1f)
+                    if (Random.Range(0.0f, 100.0f) < 0.5f)
                     {
                         agent.SetDestination(new Vector3(transform.position.x + Random.Range(-5f, 5f), 0,
                             transform.position.z + Random.Range(-5f, 5f)));

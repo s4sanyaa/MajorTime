@@ -165,23 +165,23 @@ namespace StarterAssets
 					if (!Physics.Raycast(transform.position, dirToTarget, distToTarget, LayerMask.GetMask("Ground")))
 					{
 						target.gameObject.GetComponent<Pull>().pull(gun.localToWorldMatrix.GetPosition() - targetTransform.position);
-						if (distToTarget < 2)
-							GetComponent<Inventory>().AddItem(target.gameObject);
+						//if (distToTarget < 2)
+							//GetComponent<Inventory>().AddItem(target.gameObject);
 					}
 				}
 			}
 		}
 		private void Shoot()
 		{
-			if (_input.shoot && canShoot && GetComponent<Inventory>().RemoveItem())
+			//if (_input.shoot && canShoot && GetComponent<Inventory>().RemoveItem())
 			{
-				GameObject obj = Instantiate(GetComponent<Inventory>().item, transform.position + transform.forward + Vector3.up,
-					Quaternion.identity);
+				//GameObject obj = Instantiate(GetComponent<Inventory>().item, transform.position + transform.forward + Vector3.up,
+					//Quaternion.identity);
 
-				obj.SetActive(true);
-				obj.GetComponent<Rigidbody>().AddForce(20 * transform.forward,ForceMode.Impulse);
+				//obj.SetActive(true);
+				//obj.GetComponent<Rigidbody>().AddForce(20 * transform.forward,ForceMode.Impulse);
 					canShoot = false;
-					Destroy(GetComponent<Inventory>().item);
+					//Destroy(GetComponent<Inventory>().item);
 				StartCoroutine(ResetShooting());
 				
 			}

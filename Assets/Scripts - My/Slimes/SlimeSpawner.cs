@@ -15,7 +15,8 @@ public class SlimeSpawner : MonoBehaviour
                 int randomIndex = Random.Range(10, 15);
                 for (int i = 0; i < randomIndex; i++)
                 {
-                    Instantiate(slime, spawnPoints[Random.Range(0,spawnPoints.Length)].position,Random.rotation,container);
+                    Instantiate(slime, spawnPoints[Random.Range(0,spawnPoints.Length)].position + 
+                                       new Vector3(Random.Range(-2f, 2f), 0, Random.Range(-2f, 2f)), Random.rotation, container);
                 }
             }
             GetComponent<BoxCollider>().size *= 5;

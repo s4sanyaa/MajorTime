@@ -36,6 +36,7 @@ public class FPSController : PortalTraveller {
 
     [SerializeField] private Transform gun;
     [SerializeField] private GameObject airColumn;
+    private int itemSlot;
     private bool canShoot;
     void Start () {
         cam = Camera.main;
@@ -52,6 +53,7 @@ public class FPSController : PortalTraveller {
         smoothPitch = pitch;
 
         canShoot = true;
+        itemSlot = 1;
     }
 
     void Update () {
@@ -67,9 +69,21 @@ public class FPSController : PortalTraveller {
         }
         if (disabled) return;
 
+        CheckItemSlot();
         MoveAndCam();
         Shoot();
         Vacuum();
+    }
+    private void CheckItemSlot()
+    {
+        if (Input.GetKeyDown(KeyCode.Alpha1))
+            itemSlot = 1;
+        else if (Input.GetKeyDown(KeyCode.Alpha2))
+            itemSlot = 2;
+        else if (Input.GetKeyDown(KeyCode.Alpha3))
+            itemSlot = 3;
+        else if (Input.GetKeyDown(KeyCode.Alpha4))
+            itemSlot = 4;
     }
     private void Vacuum()
     {
@@ -91,22 +105,22 @@ public class FPSController : PortalTraveller {
                 {
                     target.gameObject.GetComponent<Pull>().pull(gun.localToWorldMatrix.GetPosition() - targetTransform.position);
                     if (distToTarget < 2)
-                        GetComponent<Inventory>().AddItem(target.gameObject);
+                        GetComponent<Inventory>().AddItem(target.gameObject, itemSlot);
                 }
             }
         }
     }
     private void Shoot()
     {
-        if (Input.GetMouseButton(1) && canShoot && GetComponent<Inventory>().RemoveItem())
+        if (Input.GetMouseButton(1) && canShoot && GetComponent<Inventory>().RemoveItem(itemSlot))
         {
-            GameObject obj = Instantiate(GetComponent<Inventory>().item, transform.position + transform.forward, Quaternion.identity);
+            GameObject obj = Instantiate(GetComponent<Inventory>().item[itemSlot], transform.position + transform.forward, Quaternion.identity);
             obj.SetActive(true);
             
             obj.GetComponent<Rigidbody>().AddForce(20 * transform.forward,ForceMode.Impulse);
             canShoot = false;
             
-            Destroy(GetComponent<Inventory>().item);
+            Destroy(GetComponent<Inventory>().item[itemSlot]);
             StartCoroutine(ResetShooting());
         }
     }
