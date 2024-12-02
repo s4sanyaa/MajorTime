@@ -7812,22 +7812,22 @@ PrefabInstance:
     - target: {fileID: 7558648773206911927, guid: 46fcdb0eeee293049bd876f26d1dea80,
         type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 0
+      value: -34797.875
       objectReference: {fileID: 0}
     - target: {fileID: 7558648773206911927, guid: 46fcdb0eeee293049bd876f26d1dea80,
         type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 0
+      value: 6e-43
       objectReference: {fileID: 0}
     - target: {fileID: 7558648773206911927, guid: 46fcdb0eeee293049bd876f26d1dea80,
         type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 0
+      value: -5.299164
       objectReference: {fileID: 0}
     - target: {fileID: 7558648773206911927, guid: 46fcdb0eeee293049bd876f26d1dea80,
         type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 0
+      value: 6e-43
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -14296,22 +14296,22 @@ PrefabInstance:
     - target: {fileID: 7558648773206911927, guid: 46fcdb0eeee293049bd876f26d1dea80,
         type: 3}
       propertyPath: m_BoundingSphereOverride.w
-      value: 0
+      value: -14890.477
       objectReference: {fileID: 0}
     - target: {fileID: 7558648773206911927, guid: 46fcdb0eeee293049bd876f26d1dea80,
         type: 3}
       propertyPath: m_BoundingSphereOverride.x
-      value: 1.02e-43
+      value: 6e-43
       objectReference: {fileID: 0}
     - target: {fileID: 7558648773206911927, guid: 46fcdb0eeee293049bd876f26d1dea80,
         type: 3}
       propertyPath: m_BoundingSphereOverride.y
-      value: 3e-45
+      value: 7.1e-44
       objectReference: {fileID: 0}
     - target: {fileID: 7558648773206911927, guid: 46fcdb0eeee293049bd876f26d1dea80,
         type: 3}
       propertyPath: m_BoundingSphereOverride.z
-      value: 2.1202e-41
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7923481574707123381, guid: 46fcdb0eeee293049bd876f26d1dea80,
         type: 3}
