@@ -260,7 +260,7 @@ Texture2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: z_ColorRampTexGradientTex{"mode":0,"colorKeys":[{"color":{"r":0.9764705896377564,"g":0.5843137502670288,"b":0.7235673666000366,"a":1.0},"time":0.0019684138242155315},{"color":{"r":1.0,"g":0.14766818284988404,"b":0.0,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":1.0,"time":1.0}]}
+  m_Name: z_ColorRampTexGradientTex{"mode":0,"colorKeys":[{"color":{"r":0.6019518971443176,"g":0.49371063709259035,"b":1.0,"a":1.0},"time":0.0019684138242155315},{"color":{"r":0.5711932182312012,"g":0.46855342388153078,"b":1.0,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":1.0,"time":1.0}]}
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -296,7 +296,7 @@ Texture2D:
   m_ColorSpace: 0
   m_PlatformBlob: 
   image data: 256
-  _typelessdata: f995b9fff993b6fff992b3fff990b0fff98eadfff98caafffa8ba7fffa89a4fffa87a1fffa859efffa849cfffa8299fffa8096fffa7e93fffa7c90fffa7b8dfffb798afffb7787fffb7584fffb7481fffb727efffb707bfffb6e78fffb6c75fffb6b72fffb6970fffb676dfffc656afffc6467fffc6264fffc6061fffc5e5efffc5d5bfffc5b58fffc5955fffc5752fffc554ffffd544cfffd5249fffd5046fffd4e43fffd4d41fffd4b3efffd493bfffd4738fffd4635fffd4432fffd422ffffe402cfffe3e29fffe3d26fffe3b23fffe3920fffe371dfffe361afffe3417fffe3215fffe3012ffff2f0fffff2d0cffff2b09ffff2906ffff2703ffff2600ff
+  _typelessdata: 997effff997effff997effff997effff997effff997dffff997dffff997dffff997dffff987dffff987dffff987dffff987dffff987dffff987cffff987cffff987cffff977cffff977cffff977cffff977cffff977cffff977cffff977cffff977bffff967bffff967bffff967bffff967bffff967bffff967bffff967bffff967bffff957bffff957affff957affff957affff957affff957affff957affff957affff947affff947affff947affff9479ffff9479ffff9479ffff9479ffff9479ffff9379ffff9379ffff9379ffff9379ffff9379ffff9378ffff9378ffff9378ffff9278ffff9278ffff9278ffff9278ffff9278ffff9278ffff9277ffff
   m_StreamData:
     serializedVersion: 2
     offset: 0

@@ -6,7 +6,7 @@ Texture2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: z_ColorRampTexGradientTex{"mode":0,"colorKeys":[{"color":{"r":0.9308176040649414,"g":0.5707842707633972,"b":0.5827853679656982,"a":1.0},"time":0.0},{"color":{"r":0.4528301954269409,"g":0.0,"b":0.20458970963954926,"a":1.0},"time":0.9921568632125855}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":1.0,"time":1.0}]}
+  m_Name: z_ColorRampTexGradientTex{"mode":0,"colorKeys":[{"color":{"r":0.561183750629425,"g":0.44339609146118166,"b":1.0,"a":1.0},"time":0.0},{"color":{"r":0.3760375678539276,"g":0.3685374855995178,"b":0.9685534238815308,"a":1.0},"time":0.9921568632125855}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":1.0,"time":1.0}]}
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -42,7 +42,7 @@ Texture2D:
   m_ColorSpace: 0
   m_PlatformBlob: 
   image data: 256
-  _typelessdata: ed9295ffeb8f93ffe98d92ffe88b90ffe6888effe4868dffe2848bffe0818affde7f88ffdc7d87ffda7a85ffd87884ffd67682ffd47381ffd2717fffd06f7dffce6c7cffcc6a7affca6879ffc86577ffc66376ffc46174ffc25e73ffc15c71ffbf5a70ffbd576effbb556cffb9536bffb75069ffb54e68ffb34c66ffb14965ffaf4763ffad4562ffab4260ffa9405fffa73e5dffa53b5cffa3395affa13758ff9f3457ff9d3255ff9b3054ff9a2d52ff982b51ff96294fff94264eff92244cff90224bff8e1f49ff8c1d47ff8a1b46ff881844ff861643ff841441ff821140ff800f3eff7e0d3dff7c0a3bff7a083aff780638ff760436ff740135ff730034ff
+  _typelessdata: 8f71ffff8e71ffff8e70ffff8d70ffff8c70feff8b70feff8b6ffeff8a6ffeff896ffeff886efeff886efeff876efeff866dfdff856dfdff856dfdff846cfdff836cfdff826cfdff826cfdff816bfdff806bfcff7f6bfcff7e6afcff7e6afcff7d6afcff7c69fcff7b69fcff7b69fcff7a69fbff7968fbff7868fbff7868fbff7767fbff7667fbff7567fbff7566fbff7466faff7366faff7265faff7265faff7165faff7065faff6f64faff6f64f9ff6e64f9ff6d63f9ff6c63f9ff6c63f9ff6b62f9ff6a62f9ff6962f9ff6961f8ff6861f8ff6761f8ff6661f8ff6660f8ff6560f8ff6460f8ff635ff8ff635ff7ff625ff7ff615ef7ff605ef7ff605ef7ff
   m_StreamData:
     serializedVersion: 2
     offset: 0

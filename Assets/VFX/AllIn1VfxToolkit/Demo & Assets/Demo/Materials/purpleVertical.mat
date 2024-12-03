@@ -6,7 +6,7 @@ Texture2D:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: z_ColorRampTexGradientTex{"mode":0,"colorKeys":[{"color":{"r":0.9748427271842957,"g":0.40158611536026,"b":0.5252296924591065,"a":1.0},"time":0.0},{"color":{"r":0.95686274766922,"g":0.5568627715110779,"b":0.6484671831130981,"a":1.0},"time":0.00588998245075345},{"color":{"r":0.805031418800354,"g":0.13923485577106477,"b":0.16042007505893708,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":1.0,"time":1.0}]}
+  m_Name: z_ColorRampTexGradientTex{"mode":0,"colorKeys":[{"color":{"r":0.4608483612537384,"g":0.41297799348831179,"b":0.9874213337898254,"a":1.0},"time":0.0},{"color":{"r":0.760784387588501,"g":0.8509804606437683,"b":1.0,"a":1.0},"time":1.0}],"alphaKeys":[{"alpha":1.0,"time":0.0},{"alpha":1.0,"time":1.0}]}
   m_ImageContentsHash:
     serializedVersion: 2
     Hash: 00000000000000000000000000000000
@@ -42,7 +42,7 @@ Texture2D:
   m_ColorSpace: 0
   m_PlatformBlob: 
   image data: 256
-  _typelessdata: f96686fff48da4fff38ba2fff28aa0fff2889efff1869cfff1849afff08398ffef8196ffef7f94ffee7e92ffed7c90ffed7a8effec798cffec778affeb7588ffea7386ffea7284ffe97082ffe86e80ffe86d7effe76b7cffe7697affe66878ffe56676ffe56474ffe46272ffe46170ffe35f6effe25d6cffe25c6affe15a68ffe05867ffe05765ffdf5563ffdf5361ffde515fffdd505dffdd4e5bffdc4c59ffdc4b57ffdb4955ffda4753ffda4651ffd9444fffd8424dffd8404bffd73f49ffd73d47ffd63b45ffd53a43ffd53841ffd4363fffd3353dffd3333bffd23139ffd22f37ffd12e35ffd02c33ffd02a31ffcf292fffcf272dffce252bffcd2429ff
+  _typelessdata: 7669fcff776bfcff786dfcff796ffcff7a70fcff7c72fcff7d74fcff7e76fcff7f77fcff8079fcff827bfcff837dfcff847ffcff8580fcff8782fdff8884fdff8986fdff8a87fdff8b89fdff8d8bfdff8e8dfdff8f8ffdff9090fdff9192fdff9394fdff9496fdff9597fdff9699fdff989bfdff999dfdff9a9efdff9ba0fdff9ca2fdff9ea4fdff9fa6feffa0a7feffa1a9feffa2abfeffa4adfeffa5aefeffa6b0feffa7b2feffa9b4feffaab6feffabb7feffacb9feffadbbfeffafbdfeffb0befeffb1c0feffb2c2feffb3c4feffb5c5feffb6c7feffb7c9ffffb8cbffffbacdffffbbceffffbcd0ffffbdd2ffffbed4ffffc0d5ffffc1d7ffffc2d9ffff
   m_StreamData:
     serializedVersion: 2
     offset: 0
@@ -176,9 +176,9 @@ Material:
     - _DepthGlowDist: 0.5
     - _DepthGlowGlobal: 1
     - _DepthGlowPow: 1
-    - _DistortAmount: 0.66
-    - _DistortTexXSpeed: 0.5
-    - _DistortTexYSpeed: 0.5
+    - _DistortAmount: 0
+    - _DistortTexXSpeed: -50
+    - _DistortTexYSpeed: -50
     - _DistortionBlend: 0.306
     - _DistortionPower: -50
     - _DistortionScrollXSpeed: 0
@@ -197,8 +197,8 @@ Material:
     - _GlowGlobal: 1
     - _HandDrawnAmount: 10
     - _HandDrawnSpeed: 5
-    - _HsvBright: 1.43
-    - _HsvSaturation: 1.87
+    - _HsvBright: 1.528
+    - _HsvSaturation: 2
     - _HsvShift: 0
     - _LightAmount: 0
     - _MaskPow: 1
