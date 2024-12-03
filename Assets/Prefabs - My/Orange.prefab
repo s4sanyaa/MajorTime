@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 9181468515154050731}
   - component: {fileID: 3820129780294665186}
   - component: {fileID: 7100900813753525271}
+  - component: {fileID: 7461968201956349024}
   m_Layer: 7
   m_Name: Orange
   m_TagString: Food
@@ -164,3 +165,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pullSpeed: 6
   upDraft: 1.5
+--- !u!114 &7461968201956349024
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1193998491400526148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf707dcafb330754e95bec4b599a9c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 0}

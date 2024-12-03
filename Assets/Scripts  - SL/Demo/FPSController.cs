@@ -70,9 +70,27 @@ public class FPSController : PortalTraveller {
         if (disabled) return;
 
         CheckItemSlot();
+        Interact();
         MoveAndCam();
         Shoot();
         Vacuum();
+    }
+    private void Interact()
+    {
+        if (!Input.GetKeyDown(KeyCode.E)) return;
+        
+        Collider[] targetsInRadius = Physics.OverlapSphere(transform.position, 1, LayerMask.GetMask("Note"));
+        foreach (Collider target in targetsInRadius)
+        {
+            Transform targetTransform = target.transform;
+            Vector3 dirToTarget = (targetTransform.position - transform.position).normalized;
+            if (Vector3.Angle(transform.forward, dirToTarget) < 45)
+            {
+                float distToTarget = Vector3.Distance(transform.position, targetTransform.position);
+                if (!Physics.Raycast(transform.position, dirToTarget, distToTarget, LayerMask.GetMask("Ground")))
+                    target.gameObject.GetComponent<Note>().ReadNote();
+            }
+        }
     }
     private void CheckItemSlot()
     {
