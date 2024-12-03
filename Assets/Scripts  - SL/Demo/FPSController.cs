@@ -95,13 +95,25 @@ public class FPSController : PortalTraveller {
     private void CheckItemSlot()
     {
         if (Input.GetKeyDown(KeyCode.Alpha1))
+        {
             itemSlot = 1;
+            GetComponent<Inventory>().ChangeSlots(itemSlot);
+        }
         else if (Input.GetKeyDown(KeyCode.Alpha2))
+        {
             itemSlot = 2;
+            GetComponent<Inventory>().ChangeSlots(itemSlot);
+        }
         else if (Input.GetKeyDown(KeyCode.Alpha3))
+        {
             itemSlot = 3;
+            GetComponent<Inventory>().ChangeSlots(itemSlot);
+        }
         else if (Input.GetKeyDown(KeyCode.Alpha4))
+        {
             itemSlot = 4;
+            GetComponent<Inventory>().ChangeSlots(itemSlot);
+        }
     }
     private void Vacuum()
     {
