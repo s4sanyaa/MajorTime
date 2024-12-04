@@ -123,6 +123,41 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &3872550
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 3872551}
+  m_Layer: 0
+  m_Name: trees
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &3872551
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3872550}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 976414848}
+  - {fileID: 1672217889}
+  - {fileID: 518381706}
+  - {fileID: 1763949258}
+  m_Father: {fileID: 1929017142}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &4497314
 GameObject:
   m_ObjectHideFlags: 0
@@ -15781,7 +15816,7 @@ Transform:
   - {fileID: 304411904}
   - {fileID: 1640799728}
   - {fileID: 156261223}
-  m_Father: {fileID: 1929017142}
+  m_Father: {fileID: 3872551}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &518986795 stripped
 Transform:
@@ -34524,7 +34559,7 @@ Transform:
   - {fileID: 1175662183}
   - {fileID: 532049323}
   - {fileID: 2056969074}
-  m_Father: {fileID: 1929017142}
+  m_Father: {fileID: 3872551}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &976693031
 PrefabInstance:
@@ -53564,7 +53599,7 @@ Transform:
   - {fileID: 550834918}
   - {fileID: 1375503386}
   - {fileID: 682802363}
-  m_Father: {fileID: 1929017142}
+  m_Father: {fileID: 3872551}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1672975191 stripped
 Transform:
@@ -55507,7 +55542,7 @@ Transform:
   - {fileID: 1062627269}
   - {fileID: 1426006475}
   - {fileID: 1405140009}
-  m_Father: {fileID: 1929017142}
+  m_Father: {fileID: 3872551}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1765258696
 PrefabInstance:
@@ -58080,19 +58115,7 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2349005663836900879, guid: 46fcdb0eeee293049bd876f26d1dea80,
         type: 3}
       insertIndex: -1
-      addedObject: {fileID: 976414848}
-    - targetCorrespondingSourceObject: {fileID: 2349005663836900879, guid: 46fcdb0eeee293049bd876f26d1dea80,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1672217889}
-    - targetCorrespondingSourceObject: {fileID: 2349005663836900879, guid: 46fcdb0eeee293049bd876f26d1dea80,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 518381706}
-    - targetCorrespondingSourceObject: {fileID: 2349005663836900879, guid: 46fcdb0eeee293049bd876f26d1dea80,
-        type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1763949258}
+      addedObject: {fileID: 3872551}
     - targetCorrespondingSourceObject: {fileID: 2349005663836900879, guid: 46fcdb0eeee293049bd876f26d1dea80,
         type: 3}
       insertIndex: -1
