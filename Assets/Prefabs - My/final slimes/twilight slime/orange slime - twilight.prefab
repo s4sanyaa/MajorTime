@@ -169,6 +169,7 @@ GameObject:
   - component: {fileID: 6446138501379060641}
   - component: {fileID: 2040305831303147164}
   - component: {fileID: -5391142438865366508}
+  - component: {fileID: 2387056181281559397}
   m_Layer: 7
   m_Name: orange slime - twilight
   m_TagString: Untagged
@@ -348,6 +349,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pullSpeed: 6
   upDraft: 1.5
+--- !u!114 &2387056181281559397
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5293819795828950833}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cf707dcafb330754e95bec4b599a9c33, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  icon: {fileID: 21300000, guid: fa2675bed43c99d45bbc36946b36951e, type: 3}
 --- !u!1 &5970026841243909527
 GameObject:
   m_ObjectHideFlags: 0
