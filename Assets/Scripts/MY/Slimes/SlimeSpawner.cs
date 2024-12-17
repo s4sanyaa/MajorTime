@@ -12,7 +12,7 @@ public class SlimeSpawner : MonoBehaviour
         {
             foreach (GameObject slime in slimes)
             {
-                int randomIndex = Random.Range(10, 15);
+                int randomIndex = Random.Range(3, 7);
                 for (int i = 0; i < randomIndex; i++)
                 {
                     Instantiate(slime, spawnPoints[Random.Range(0,spawnPoints.Length)].position + 
